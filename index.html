@@ -29,46 +29,44 @@
 </head>
 
 <body>
+    <div id="prepa">
+        <label for="playerin">Entrer le nom d'un joueur</label>
+        <br>
+        <input id="playerin" type="text">
+        <br>
+        <button id="addplayer">Entrer</button>
 
-    <label for="playerin">Entrer le nom d'un joueur</label>
-    <br>
-    <input id="playerin" type="text">
-    <br>
-    <button id="addplayer">Entrer</button>
+        <div>
+            <h2>Liste des joueurs</h2>
+            <ul id="playerlist">
+            </ul>
+        </div>
 
-    <div>
-        <h2>Liste des joueurs</h2>
-        <ul id="playerlist">
-        </ul>
+        <label for="rolein">Ajouter un rôle</label>
+        <br>
+        <select id="rolein">
+            <option value="Villageois">Villageois</option>
+            <option value="Loup-Garou">Loup-Garou</option>
+            <option value="Loup Blanc">Loup Blanc</option>
+            <option value="Grand méchant loup">Grand méchant loup</option>
+            <option value="Enfant sauvage">Enfant sauvage</option>
+            <option value="Voyante">Voyante</option>
+            <option value="Voleur">Voleur</option>
+            <option value="Chasseur">Chasseur</option>
+            <option value="Cupidon">Cupidon</option>
+            <option value="Sorcière">Sorcière</option>
+            <option value="Petite fille">Petite fille</option>
+        </select>
+        <br>
+        <button id="addrole">Entrer</button>
+
+        <div>
+            <h2>Liste des rôles</h2>
+            <ul id="rolelist">
+            </ul>
+        </div>
+        <button id="begin">Démarrer la partie</button>
     </div>
-
-    <label for="rolein">Ajouter un rôle</label>
-    <br>
-    <select id="rolein">
-        <option value="Civil">Civil</option>
-        <option value="Executeur">Executeur</option>
-        <option value="Nano-Executeur">Nano-executeur</option>
-        <option value="Mercenaire">Mercenaire</option>
-        <option value="Hacker">Hacker</option>
-        <option value="Docteur">Docteur</option>
-        <option value="Chasseur de primes">Chasseur de primes</option>
-        <option value="Policier">Policier</option>
-        <option value="Manipulateur">Manipulateur</option>
-        <option value="Fou">Fou</option>
-        <option value="Pyromane">Pyromane</option>
-        <option value="Réanimateur">Réanimateur</option>
-        <option value="Dictateur">Dictateur</option>
-        <option value="Bouffon">Bouffon</option>
-    </select>
-    <br>
-    <button id="addrole">Entrer</button>
-
-    <div>
-        <h2>Liste des rôles</h2>
-        <ul id="rolelist">
-        </ul>
-    </div>
-    <button id="begin">Débuter la simulation</button>
     <div>
         <h2>La simulation donne les rôles</h2>
         <ul class="circle" id="roles"></ul>

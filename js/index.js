@@ -5,6 +5,7 @@ window.onload = function () {
     var compa = 0;
     //Variables de joueur
     var plist = [];
+    var joueurs = [];
     var pbutton = document.getElementById('addplayer');
     var randp;
     //Variables de rôles
@@ -57,12 +58,13 @@ window.onload = function () {
     begin.onclick = function () {
         console.log(plist.length, rlist.length)
         console.log('début', begin);
-        if (plist.length < 6) {
-            alert('Il n\'y a pas assez de joueurs !');
+        if (plist.length < 5) {
+            alert('Il faut au minimum 5 joueurs !');
         } else {
             if (plist.length !== rlist.length) {
                 alert("Le nombre de joueurs et de rôles n'est pas égal");
             } else {
+                document.getElementById("prepa").classList.add("hidden");
                 giverole();
                 pbutton.disabled = true;
                 rbutton.disabled = true;
