@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Tirage LG</title>
+</head>
+
+<body>
+
+    <label for="playerin">Entrer le nom d'un joueur</label>
+    <br>
+    <input id="playerin" type="text">
+    <br>
+    <button id="addplayer">Entrer</button>
+
+    <div>
+        <h2>Liste des joueurs</h2>
+        <ul id="playerlist">
+        </ul>
+    </div>
+
+    <label for="rolein">Ajouter un rôle</label>
+    <br>
+    <select id="rolein">
+        <option value="Civil">Civil</option>
+        <option value="Executeur">Executeur</option>
+        <option value="Nano-Executeur">Nano-executeur</option>
+        <option value="Mercenaire">Mercenaire</option>
+        <option value="Hacker">Hacker</option>
+        <option value="Docteur">Docteur</option>
+        <option value="Chasseur de primes">Chasseur de primes</option>
+        <option value="Policier">Policier</option>
+        <option value="Manipulateur">Manipulateur</option>
+        <option value="Fou">Fou</option>
+        <option value="Pyromane">Pyromane</option>
+        <option value="Réanimateur">Réanimateur</option>
+        <option value="Dictateur">Dictateur</option>
+        <option value="Bouffon">Bouffon</option>
+    </select>
+    <br>
+    <button id="addrole">Entrer</button>
+
+    <div>
+        <h2>Liste des rôles</h2>
+        <ul id="rolelist">
+        </ul>
+    </div>
+    <button id="begin">Débuter la simulation</button>
+    <div>
+        <h2>La simulation donne les rôles</h2>
+        <ul class="circle" id="roles"></ul>
+    </div>
+
+</body>
+
+</html>

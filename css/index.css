@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+
+* {
+    font-size: 1.05em;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+li {
+    list-style: decimal;
+}
+
+.circle {
+    list-style: circle;
+}
+
+button {
+    border-radius: 20px;
+    margin: 1%;
+}
+
+.remrole,
+.remplayer {
+    font-size: 1em;
+    background-color: darkred;
+}
+
+@media only screen and (max-width: 700px) {
+    * {
+        font-size: 1em;
+    }
+}
